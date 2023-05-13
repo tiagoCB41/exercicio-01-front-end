@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="tiago_cb41">
+    <title>Caderno de Receitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="text-center">Caderno de Receitas</h1>
+                    </div>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <div class="main">
+                            <!-- Página 01 -->
+                            <div class="item active" id="pag1">
+                                <img class="recipe-img" src="imagens/bolo_cenoura.jpg" alt="Bolo de Cenoura">
+                                <h2>Receita de Bolo de Cenoura</h2>
+                                <ul>
+                                    <li>3 cenouras médias raspadas e picadas</li>
+                                    <li>4 ovos</li>
+                                    <li>1 xícara de óleo</li>
+                                    <li>2 xícaras de açúcar</li>
+                                    <li>2 xícaras de farinha de trigo</li>
+                                    <li>1 colher (sopa) de fermento em pó</li>
+                                </ul>
+                                <h3>Modo de preparo</h3>
+                                <ol>
+                                    <li>Pré-aqueça o forno a 180°C.</li>
+                                    <li>No liquidificador, bata as cenouras, os ovos e o óleo até obter uma mistura homogênea.</li>
+                                    <li>Em uma tigela, misture o açúcar e a farinha de trigo. Adicione a mistura do liquidificador e misture bem.</li>
+                                    <li>Adicione o fermento em pó e misture delicadamente.</li>
+                                    <li>Despeje a massa em uma forma untada e enfarinhada.</li>
+                                    <li>Leve ao forno por cerca de 35-40 minutos, ou até que um palito inserido no centro do bolo saia limpo.</li>
+                                    <li>Retire do forno e deixe esfriar antes de servir.</li>
+                                </ol>
+                            </div> 
+                            <!-- Página 02 -->
+                            <div id="pag2" class="item">
+                                <img class="recipe-img" src="imagens/lasanha_frango.jpg" alt="Lasanha de Frango">
+                                <h2>Receita de Lasanha de Frango</h2>
+                                <ul>
+                                    <li>500g de massa de lasanha pré-cozida</li>
+                                    <li>1kg de peito de frango cozido e desfiado</li>
+                                    <li>1 cebola picada</li>
+                                    <li>2 dentes de alho picados</li>
+                                    <li>1 lata de molho de tomate</li>
+                                    <li>2 caixas de creme de leite</li>
+                                    <li>2 xícaras de queijo mussarela ralado</li>
+                                    <li>Sal e pimenta-do-reino a gosto</li>
+                                </ul>
+                                <h3>Modo de preparo</h3>
+                                <ol>
+                                    <li>Em uma panela, refogue a cebola e o alho no azeite até ficarem dourados. Acrescente o frango desfiado e refogue por mais alguns minutos.</li>
+                                    <li>Adicione o molho de tomate e tempere com sal e pimenta a gosto. Deixe cozinhar por cerca de 10 minutos.</li>
+                                    <li>Em outra panela, aqueça o creme de leite e misture metade do queijo ralado. Mexa até que o queijo esteja completamente derretido.</li>
+                                    <li>Em uma travessa, coloque uma camada de massa de lasanha, seguida de uma camada de frango refogado e uma camada do creme de leite com queijo.</li>
+                                    <li>Repita as camadas até acabarem os ingredientes, sendo que a última camada deve ser de queijo ralado.</li>
+                                    <li>Cubra a travessa com papel alumínio e leve ao forno preaquecido a 200°C por cerca de 20 minutos. Retire o papel alumínio e deixe gratinar por mais 10 minutos.</li>
+                                </ol>
+                            </div>
+                            <!-- Página 03 -->
+                            <div id="pag3" class="item">
+                                <img class="recipe-img" src="imagens/brigadeiro.jpg" alt="Brigadeiro">
+                                <h2>Receita de Brigadeiro</h2>
+                                <ul>
+                                    <li>1 lata de leite condensado</li>
+                                    <li>4 colheres (sopa) de achocolatado em pó</li>
+                                    <li>1 colher (sopa) de manteiga</li>
+                                    <li>Granulado para decorar</li>
+                                </ul>
+                                <h3>Modo de preparo</h3>
+                                <ol>
+                                    <li>Em uma panela, adicione o leite condensado, o achocolatado em pó e a manteiga.</li>
+                                    <li>Leve ao fogo baixo e mexa sem parar até obter uma mistura homogênea e que comece a soltar do fundo da panela (cerca de 10-15 minutos).</li>
+                                    <li>Desligue o fogo e deixe esfriar um pouco antes de moldar as bolinhas de brigadeiro.</li>
+                                    <li>Com as mãos levemente untadas com manteiga, pegue pequenas porções da mistura e molde bolinhas.</li>
+                                    <li>Passe as bolinhas de brigadeiro no granulado e coloque em forminhas de papel.</li>
+                                    <li>Leve à geladeira por cerca de 30 minutos antes de servir.</li>
+                                </ol>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <!-- Paginação -->
+                <ul class="pagination">
+                    <li class="page-item active"><a class="page-link" href="#pag1" onclick="paginar('pag1')">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#pag2" onclick="paginar('pag2')">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#pag3" onclick="paginar('pag3')">3</a></li>
+                </ul>   
+            </div>  
+        </div>
+        <footer>
+            <div style="height: 60px;" class="d-flex justify-content-center align-items-center p-5">
+                <img src="./imagens/tiago_cb41.jpeg" class="img-fluid mr-3 rounded-circle" style="height: 60px; margin-right: 15px;" alt="" srcset="">
+                <h4>Desenvolvido por <a href="https://github.com/tiagoCB41" target="_blank">Tiago_cb41</a></h4> 
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/paginar.js"></script>
+</body>
+</html>
